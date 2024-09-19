@@ -5,3 +5,9 @@ usage() {
   exit 1
 }
 
+if [ "$#" -lt 1 ]; then
+  usage
+fi
+
+COMMAND="$1"
+shift
